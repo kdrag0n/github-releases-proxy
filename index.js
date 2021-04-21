@@ -16,11 +16,6 @@ const CORS_ALLOWED_ORIGINS = [
   /^android-webinstall-[a-z0-9]+-kdrag0n\.vercel\.app$/,
 ];
 
-addEventListener('fetch', function(event) {
-  let resp = handleRequest(event.request);
-  return event.respondWith(resp);
-});
-
 function validateCors(origin) {
   let originUrl = new URL(origin);
   for (let pattern of CORS_ALLOWED_ORIGINS) {
@@ -95,3 +90,8 @@ async function handleRequest(request) {
 
   return clientResp;
 }
+
+addEventListener('fetch', function(event) {
+  let resp = handleRequest(event.request);
+  return event.respondWith(resp);
+});
