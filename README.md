@@ -4,7 +4,7 @@ This is a simple Cloudflare Workers script that proxies requests to preconfigure
 
 ## Why?
 
-Many open-source projects use GitHub Releases to host assets and build artifacts. It is a fast (backed by Amazon S3), free, and convenient solution, particularly for projects with larger assets. Sometimes, it may be desirable to download assets directly from the user’s browser — for example, when using a [web installer frontend](https://github.com/kdrag0n/android-install/) to install the product.
+Many open-source projects use GitHub Releases to host assets and build artifacts. It is a fast (backed by Amazon S3), free, and convenient solution, particularly for projects with larger assets. Sometimes, it may be desirable to download assets directly from the user’s browser — for example, when using a [web installer frontend](https://github.com/kdrag0n/android-webinstall/) to install the product.
 
 This is not possible as-is because of [GitHub's S3 settings](https://github.com/octokit/rest.js/issues/12), which do not return the CORS headers necessary for browsers to allow such requests. Responses from GitHub staff on the issue suggest that support for this use case is planned, but it is not currently available.
 
