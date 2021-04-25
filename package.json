@@ -1,8 +1,7 @@
 {
-  "private": true,
   "name": "github-releases-proxy",
   "version": "1.0.0",
-  "description": "A template for kick starting a Cloudflare Workers project",
+  "description": "GitHub Releases asset proxy for Cloudflare Workers",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
