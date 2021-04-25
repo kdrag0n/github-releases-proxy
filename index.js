@@ -3,7 +3,7 @@ const ORIGIN_URL = "https://github.com/ProtonAOSP";
 
 // Whether to cache assets from GitHub
 // Disable to conserve Workers cache quota
-const USE_CACHE = true;
+const USE_CACHE = false;
 
 // Browser cache TTL, in seconds
 const CACHE_TTL = 5259488; // 2 months
